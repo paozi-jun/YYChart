@@ -29,46 +29,6 @@ class YYLineChart: UIView {
     }
     }
     
-    var _yLabels:NSArray?
-    var yLabels:NSArray?{
-    set{
-        self._yLabels = newValue
-        var max:Int = 0
-        for valueString:AnyObject in newValue! {
-            
-            var value = (valueString as String).toInt()
-            if (value > max) {
-                max = value!
-            }
-        }
-        
-        //Min value for Y label
-        if max < 5 {
-            max = 5
-        }
-        
-        self.yValueMax = max
-        
-        var level = Float(max)/5.0
-        
-        var index = 0
-        var num = self.yLabels!.count + 1
-        while num > 0 {
-            var chartCavanHeight = self.frame.size.height - chartMargin * 2.0 - 40.0
-            var levelHeight = chartCavanHeight/5.0;
-            var label = YYChartLabel(frame:CGRectMake(0.0,chartCavanHeight - Float(index) * levelHeight + (levelHeight - yLabelHeight) , 20.0, yLabelHeight))
-            label.textAlignment = NSTextAlignment.Right
-            label.text = NSString(format:"%1.f",level * Float(index))
-            self.addSubview(label)
-            index += 1
-            num -= 1
-        }
-    }
-    get{
-        return self._yLabels
-    }
-    }
-    
     var _yValues:NSArray?
     var yValues:NSArray?{
     get{
@@ -76,36 +36,7 @@ class YYLineChart: UIView {
     }
     set{
         self._yValues = newValue
-        var max:Int = 0
-        for valueString:AnyObject in newValue! {
-            
-            var value = (valueString as String).toInt()
-            if (value > max) {
-                max = value!
-            }
-        }
-        
-        //Min value for Y label
-        if max < 5 {
-            max = 5
-        }
-        
-        self.yValueMax = max
-        
-        var level = Float(max)/5.0
-        
-        var index = 0
-        var num = newValue!.count + 1
-        while num > 0 {
-            var chartCavanHeight = self.frame.size.height - chartMargin * 2.0 - 40.0
-            var levelHeight = chartCavanHeight/5.0;
-            var label = YYChartLabel(frame:CGRectMake(0.0,chartCavanHeight - Float(index) * levelHeight + (levelHeight - yLabelHeight) , 20.0, yLabelHeight))
-            label.textAlignment = NSTextAlignment.Right
-            label.text = NSString(format:"%1.f",level * Float(index))
-            self.addSubview(label)
-            index += 1
-            num -= 1
-        }
+        self.setYLabels(newValue)
     }
     }
     
@@ -141,6 +72,39 @@ class YYLineChart: UIView {
         self.layer.addSublayer(self.chartLine)
     }
 
+    func setYLabels(newValue:NSArray?){
+        var max:Int = 0
+        for valueString:AnyObject in newValue! {
+            
+            var value = (valueString as String).toInt()
+            if (value > max) {
+                max = value!
+            }
+        }
+        
+        //Min value for Y label
+        if max < 5 {
+            max = 5
+        }
+        
+        self.yValueMax = max
+        
+        var level = Float(max)/5.0
+        
+        var index = 0
+        var num = newValue!.count + 1
+        while num > 0 {
+            var chartCavanHeight = self.frame.size.height - chartMargin * 2.0 - 40.0
+            var levelHeight = chartCavanHeight/5.0;
+            var label = YYChartLabel(frame:CGRectMake(0.0,chartCavanHeight - Float(index) * levelHeight + (levelHeight - yLabelHeight) , 20.0, yLabelHeight))
+            label.textAlignment = NSTextAlignment.Right
+            label.text = NSString(format:"%1.f",level * Float(index))
+            self.addSubview(label)
+            index += 1
+            num -= 1
+        }
+    }
+    
     func strokeChart(){
         //return
         var progressline = UIBezierPath()
