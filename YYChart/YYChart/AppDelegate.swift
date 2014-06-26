@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  YYChart
-//
-//  Created by 向文品 on 14-6-26.
-//  Copyright (c) 2014年 向文品. All rights reserved.
-//
 
 import UIKit
 
@@ -19,6 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
+        self.window!.rootViewController = MainViewController(nibName:nil, bundle: nil)
         return true
     }
 

@@ -10,7 +10,7 @@ class YYChartLabel: UILabel {
         self.minimumScaleFactor = 11.0
         self.numberOfLines = 0
         self.font = UIFont.boldSystemFontOfSize(11.0)
-        self.textColor = YYColors.PNDeepGrey
+        self.textColor = YYColors.DeepGrey
         self.backgroundColor = UIColor.clearColor()
         self.textAlignment = NSTextAlignment.Left
         self.userInteractionEnabled = true
