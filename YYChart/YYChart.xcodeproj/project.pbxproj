@@ -18,6 +18,9 @@
 		8FC098FD195C6B5D00C406B9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC098FC195C6B5D00C406B9 /* MainViewController.swift */; };
 		8FC098FF195C7F9200C406B9 /* YYBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC098FE195C7F9200C406B9 /* YYBar.swift */; };
 		8FC09901195C83CF00C406B9 /* YYBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC09900195C83CF00C406B9 /* YYBarChart.swift */; };
+		8FC09905195C8C3F00C406B9 /* icon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC09902195C8C3F00C406B9 /* icon_120.png */; };
+		8FC09906195C8C3F00C406B9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC09903195C8C3F00C406B9 /* icon.png */; };
+		8FC09907195C8C3F00C406B9 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC09904195C8C3F00C406B9 /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		8FC098FC195C6B5D00C406B9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8FC098FE195C7F9200C406B9 /* YYBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBar.swift; sourceTree = "<group>"; };
 		8FC09900195C83CF00C406B9 /* YYBarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBarChart.swift; sourceTree = "<group>"; };
+		8FC09902195C8C3F00C406B9 /* icon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_120.png; sourceTree = "<group>"; };
+		8FC09903195C8C3F00C406B9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		8FC09904195C8C3F00C406B9 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 		8FC098D7195C54F200C406B9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8FC09902195C8C3F00C406B9 /* icon_120.png */,
+				8FC09903195C8C3F00C406B9 /* icon.png */,
+				8FC09904195C8C3F00C406B9 /* icon@2x.png */,
 				8FC098D8195C54F200C406B9 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -215,7 +224,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FC09905195C8C3F00C406B9 /* icon_120.png in Resources */,
+				8FC09907195C8C3F00C406B9 /* icon@2x.png in Resources */,
 				8FC098DC195C54F200C406B9 /* Images.xcassets in Resources */,
+				8FC09906195C8C3F00C406B9 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +429,7 @@
 				8FC098ED195C54F200C406B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FC098EE195C54F200C406B9 /* Build configuration list for PBXNativeTarget "YYChartTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +438,7 @@
 				8FC098F0195C54F200C406B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
