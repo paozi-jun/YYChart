@@ -11,6 +11,8 @@
 		8FC098DC195C54F200C406B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC098DB195C54F200C406B9 /* Images.xcassets */; };
 		8FC098E8195C54F200C406B9 /* YYChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC098E7195C54F200C406B9 /* YYChartTests.swift */; };
 		8FC098F3195C56BC00C406B9 /* YYColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC098F2195C56BC00C406B9 /* YYColor.swift */; };
+		8FC098F5195C5B2D00C406B9 /* YYChartLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC098F4195C5B2D00C406B9 /* YYChartLabel.swift */; };
+		8FC098F7195C5C1500C406B9 /* YYLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC098F6195C5C1500C406B9 /* YYLineChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		8FC098E6195C54F200C406B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FC098E7195C54F200C406B9 /* YYChartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYChartTests.swift; sourceTree = "<group>"; };
 		8FC098F2195C56BC00C406B9 /* YYColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYColor.swift; sourceTree = "<group>"; };
+		8FC098F4195C5B2D00C406B9 /* YYChartLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYChartLabel.swift; sourceTree = "<group>"; };
+		8FC098F6195C5C1500C406B9 /* YYLineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLineChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				8FC098F2195C56BC00C406B9 /* YYColor.swift */,
+				8FC098F4195C5B2D00C406B9 /* YYChartLabel.swift */,
+				8FC098F6195C5C1500C406B9 /* YYLineChart.swift */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -211,7 +217,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FC098F7195C5C1500C406B9 /* YYLineChart.swift in Sources */,
 				8FC098DA195C54F200C406B9 /* AppDelegate.swift in Sources */,
+				8FC098F5195C5B2D00C406B9 /* YYChartLabel.swift in Sources */,
 				8FC098F3195C56BC00C406B9 /* YYColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
