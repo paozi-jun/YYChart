@@ -10,6 +10,7 @@
 		8FC098DA195C54F200C406B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC098D9195C54F200C406B9 /* AppDelegate.swift */; };
 		8FC098DC195C54F200C406B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC098DB195C54F200C406B9 /* Images.xcassets */; };
 		8FC098E8195C54F200C406B9 /* YYChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC098E7195C54F200C406B9 /* YYChartTests.swift */; };
+		8FC098F3195C56BC00C406B9 /* YYColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC098F2195C56BC00C406B9 /* YYColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,7 @@
 		8FC098E1195C54F200C406B9 /* YYChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC098E6195C54F200C406B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FC098E7195C54F200C406B9 /* YYChartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYChartTests.swift; sourceTree = "<group>"; };
+		8FC098F2195C56BC00C406B9 /* YYColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		8FC098CB195C54F200C406B9 = {
 			isa = PBXGroup;
 			children = (
+				8FC098F1195C566500C406B9 /* Class */,
 				8FC098D6195C54F200C406B9 /* YYChart */,
 				8FC098E4195C54F200C406B9 /* YYChartTests */,
 				8FC098D5195C54F200C406B9 /* Products */,
@@ -101,6 +104,14 @@
 				8FC098E6195C54F200C406B9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FC098F1195C566500C406B9 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				8FC098F2195C56BC00C406B9 /* YYColor.swift */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FC098DA195C54F200C406B9 /* AppDelegate.swift in Sources */,
+				8FC098F3195C56BC00C406B9 /* YYColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
