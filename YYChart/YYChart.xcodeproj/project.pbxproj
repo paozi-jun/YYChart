@@ -13,6 +13,7 @@
 		8FC098F3195C56BC00C406B9 /* YYColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC098F2195C56BC00C406B9 /* YYColor.swift */; };
 		8FC098F5195C5B2D00C406B9 /* YYChartLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC098F4195C5B2D00C406B9 /* YYChartLabel.swift */; };
 		8FC098F7195C5C1500C406B9 /* YYLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC098F6195C5C1500C406B9 /* YYLineChart.swift */; };
+		8FC098F9195C5DA500C406B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC098F8195C5DA500C406B9 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8FC098F2195C56BC00C406B9 /* YYColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYColor.swift; sourceTree = "<group>"; };
 		8FC098F4195C5B2D00C406B9 /* YYChartLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYChartLabel.swift; sourceTree = "<group>"; };
 		8FC098F6195C5C1500C406B9 /* YYLineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLineChart.swift; sourceTree = "<group>"; };
+		8FC098F8195C5DA500C406B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FC098F9195C5DA500C406B9 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		8FC098CB195C54F200C406B9 = {
 			isa = PBXGroup;
 			children = (
+				8FC098F8195C5DA500C406B9 /* QuartzCore.framework */,
 				8FC098F1195C566500C406B9 /* Class */,
 				8FC098D6195C54F200C406B9 /* YYChart */,
 				8FC098E4195C54F200C406B9 /* YYChartTests */,
