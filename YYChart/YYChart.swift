@@ -13,6 +13,8 @@ class YYChart: UIView {
     
     var lineChart:YYLineChart?
     
+    var barChart:YYBarChart?
+    
     var type:YYChartType?
     
     var strokeColor:UIColor?
@@ -35,13 +37,13 @@ class YYChart: UIView {
             self.lineChart!.strokeChart()
             
         }else if self.type == YYChartType.BarType{
-//            _barChart = [[PNBarChart alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
-//            _barChart.backgroundColor = [UIColor clearColor];
-//            [self addSubview:_barChart];
-//            [_barChart setYValues:_yValues];
-//            [_barChart setXLabels:_xLabels];
-//            [_barChart setStrokeColor:_strokeColor];
-//            [_barChart strokeChart];
+            self.barChart = YYBarChart(frame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height))
+            self.barChart!.backgroundColor = UIColor.clearColor()
+            self.addSubview(self.barChart)
+            self.barChart!.yValues = self.yValues
+            self.barChart!.xLabels = self.xLabels
+            self.barChart!.strokeColor = self.strokeColor
+            self.barChart!.strokeChart()
             
         }
     }

@@ -14,17 +14,35 @@ class MainViewController: UIViewController {
 
         var lineChartLabel = UILabel(frame:CGRectMake(0, 30, SCREEN_WIDTH, 30))
         lineChartLabel.text = "Line Chart"
-        lineChartLabel.textColor = YYColors.Green
+        lineChartLabel.textColor = YYColors.Blue
         lineChartLabel.font = UIFont.systemFontOfSize(23.0)
         lineChartLabel.textAlignment = NSTextAlignment.Center
         
         var lineChart = YYChart(frame:CGRectMake(0, 75.0, SCREEN_WIDTH, 200.0))
+        lineChart.strokeColor = YYColors.Blue
         lineChart.backgroundColor = UIColor.clearColor()
         lineChart.xLabels = NSArray(objects:"SEP 1","SEP 2","SEP 3","SEP 4","SEP 5")
         lineChart.yValues = NSArray(objects:"1","10","2","6","3")
         lineChart.strokeChart()
         self.view.addSubview(lineChartLabel)
         self.view.addSubview(lineChart)
+        
+        
+        var barChartLabel = UILabel(frame:CGRectMake(0, 300, SCREEN_WIDTH, 30))
+        barChartLabel.text = "Bar Chart"
+        barChartLabel.textColor = YYColors.Blue
+        barChartLabel.font = UIFont.systemFontOfSize(23.0)
+        barChartLabel.textAlignment = NSTextAlignment.Center
+        
+        var barChart = YYChart(frame:CGRectMake(0, 335.0, SCREEN_WIDTH, 200.0))
+        barChart.backgroundColor = UIColor.clearColor()
+        barChart.strokeColor = YYColors.Blue
+        barChart.type = YYChartType.BarType
+        barChart.xLabels = ["SEP 1","SEP 2","SEP 3","SEP 4","SEP 5"]
+        barChart.yValues = ["1","10","2","6","3"]
+        barChart.strokeChart()
+        self.view.addSubview(barChartLabel)
+        self.view.addSubview(barChart)
         
         // Do any additional setup after loading the view.
     }

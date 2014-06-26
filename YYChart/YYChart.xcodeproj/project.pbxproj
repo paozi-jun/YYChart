@@ -17,6 +17,7 @@
 		8FC098FB195C68FE00C406B9 /* YYChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC098FA195C68FE00C406B9 /* YYChart.swift */; };
 		8FC098FD195C6B5D00C406B9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC098FC195C6B5D00C406B9 /* MainViewController.swift */; };
 		8FC098FF195C7F9200C406B9 /* YYBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC098FE195C7F9200C406B9 /* YYBar.swift */; };
+		8FC09901195C83CF00C406B9 /* YYBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC09900195C83CF00C406B9 /* YYBarChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		8FC098FA195C68FE00C406B9 /* YYChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYChart.swift; sourceTree = "<group>"; };
 		8FC098FC195C6B5D00C406B9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8FC098FE195C7F9200C406B9 /* YYBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBar.swift; sourceTree = "<group>"; };
+		8FC09900195C83CF00C406B9 /* YYBarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBarChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +128,9 @@
 			children = (
 				8FC098F2195C56BC00C406B9 /* YYColor.swift */,
 				8FC098F4195C5B2D00C406B9 /* YYChartLabel.swift */,
-				8FC098F6195C5C1500C406B9 /* YYLineChart.swift */,
 				8FC098FA195C68FE00C406B9 /* YYChart.swift */,
+				8FC098F6195C5C1500C406B9 /* YYLineChart.swift */,
+				8FC09900195C83CF00C406B9 /* YYBarChart.swift */,
 				8FC098FE195C7F9200C406B9 /* YYBar.swift */,
 			);
 			name = Class;
@@ -234,6 +237,7 @@
 				8FC098DA195C54F200C406B9 /* AppDelegate.swift in Sources */,
 				8FC098FB195C68FE00C406B9 /* YYChart.swift in Sources */,
 				8FC098FF195C7F9200C406B9 /* YYBar.swift in Sources */,
+				8FC09901195C83CF00C406B9 /* YYBarChart.swift in Sources */,
 				8FC098FD195C6B5D00C406B9 /* MainViewController.swift in Sources */,
 				8FC098F5195C5B2D00C406B9 /* YYChartLabel.swift in Sources */,
 				8FC098F3195C56BC00C406B9 /* YYColor.swift in Sources */,
